@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="Roberto Kippins" content="This page cointains all assignment content of the WDD230 Course">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  <link rel="stylesheet" type="text/css" href="styles/dom.css">
+  <title>Favorite Book of Mormon Chapters</title>
+</head>
+<body>
+  <div class="wrapper">
+    <header>
+      <h1>Favorite Book of Mormon Chapters</h1>
+    </header>
+
+    <div class="container">
+      <div class="input-section">
+        <input type="text" id="chapter-input" placeholder="Enter a chapter...">
+        <button id="add-button">Add Chapter</button>
+      </div>
+      <ul id="chapter-list"></ul>
+    </div>
+
+    <footer>
+        <p class= "copyright">
+            &copy;<span id="currentYear"></span> | Roberto A. Kippins | Georgetown, Guyana
+        </p>
+        <p class= "lastupdated">
+            Last Updated: <span id="currentTime"></span>
+        </p>
+    </footer>
+  </div>
+  <script src="scripts/main.js"></script>
+  <script src="scripts/dom.js"></script>
+</body>
+</html>

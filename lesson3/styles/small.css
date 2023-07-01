@@ -1,0 +1,104 @@
+/* Small viewport styles */
+
+/* Reset box model and remove margins/padding */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Body styles */
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    line-height: 1.6;
+    text-align: center;
+    color: #000000;
+}
+
+/* Header styles */
+header {
+    background-color: #000000;
+    color: #FFFFFF;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+header h2 {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+/* Navigation styles */
+nav {
+    background-color: #000000;
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    color: #FFFFFF;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+nav a.active {
+    font-weight: bold;
+}
+
+/* Main content styles */
+main {
+    padding: 20px;
+}
+
+main h1 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+main h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+main h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+main p {
+    margin-bottom: 10px;
+}
+
+.colors {
+    margin-left: auto;
+    margin-right: auto;
+}
+  
+
+.primary {
+    color: #FFFFFF;
+    background-color: #000000;
+}
+
+.accent {
+    color: #000000;
+    background-color: #FFD700;
+}
+
+/* Footer styles */
+footer {
+    background-color: #000000;
+    color: #FFFFFF;
+    padding: 10px;
+    text-align: center;
+}
+
+footer p {
+    margin-bottom: 5px;
+}

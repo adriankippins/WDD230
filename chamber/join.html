@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Roberto A. Kippins">
+    <meta name="description" content="Site-plan for Georgetown Chamber of Commerce Website">
+    <meta name="Roberto Kippins" content="This page contains all assignment content of the WDD230 Course">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Eczar&display=swap">
+    <link rel="stylesheet" href="../styles/normalize.css">
+    <link rel="stylesheet" href="../chamber/styles/small.css">
+    <link rel="stylesheet" href="../chamber/styles/medium.css">
+    <link rel="stylesheet" href="../chamber/styles/large.css">
+    <link rel="icon" href="../chamber/images/favicon.png" type="image/png">
+    <title>Georgetown Chamber of Commerce</title>
+</head>
+<body>
+    <header>
+        <div id="header-content">
+            <div id="logo-section">
+                <img src="../chamber/images/logo.png" alt="logo" id="header-logo">
+                <section id="name-section">
+                    <h1>Georgetown</h1>
+                    <h2>Chamber of Commerce</h2>
+                </section>
+            </div>
+            <nav class="navbar">
+                <ul class="nav-links">
+                    <li class="nav-item"><a id="menu" href="#"></a></li>
+                    <li class="nav-item"><a href="../chamber/">Home</a></li>
+                    <li class="nav-item"><a href="../chamber/discovery.html">Discover</a></li>
+                    <li class="nav-item"><a href="../chamber/directory.html">Directory</a></li>
+                    <li class="nav-item"><a href="../chamber/join.html">Join</a></li>
+                    <li class="nav-item"><a href="../chamber/contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div id="social-div">
+                <img src="../chamber/images/facebook.png" alt="facebook" class="social">
+                <img src="../chamber/images/linkedin.png" alt="linkedin" class="social">
+            </div>
+            <div id="date-section">
+                <p>Generic date</p>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="join-main">
+            <h1 id="join-heading">Join us and unlock your exclusive benefits today</h1>
+            <div class="join-content">
+                <div class="join-form-wrapper">
+                    <form class="join-form" action="thankyou.html" method="get">
+                        <label class="first-label">
+                            First name:
+                            <input type="text" name="first-name" required>
+                        </label>
+                        <label>
+                            Last name:
+                            <input type="text" name="last-name" required>
+                        </label>
+                        <label>
+                            Position:
+                            <input type="text" name="position" pattern="^[A-Za-z- ]{7,}$">
+                        </label>
+                        <label>
+                            Email:
+                            <input type="email" name="email" placeholder="example@example.com" required>
+                        </label>
+                        <label>
+                            Cell phone number:
+                            <input type="tel" name="phone" required>
+                        </label>
+                        <label>
+                            Business name/title:
+                            <input type="text" name="business-name" required>
+                        </label>
+                        <label>
+                            Membership level:
+                            <select class="membership-level" name="membership-level">
+                                <option value="">Please Select &#9662;</option>
+                                <option value="np">Non Profit</option>
+                                <option value="bronze">Bronze Membership</option>
+                                <option value="silver">Silver Membership</option>
+                                <option value="gold">Gold Membership</option>
+                            </select>
+                        </label>
+                        <label>
+                            Business description:
+                            <textarea name="business-description"></textarea>
+                        </label>
+                        <input type="hidden" name="timestamp" value="">
+                        <input type="submit" value="Submit">
+                    </form>
+                </div>
+                <div class="benefits-table-wrapper">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th id="ml" colspan="5">Membership Levels & Benefits</th>
+                            </tr>
+                            <tr>
+                                <td>&nbsp;</td>
+                                <th class="heading">NP</th>
+                                <th class="heading">Bronze</th>
+                                <th class="heading" >Silver</th>
+                                <th class="heading">Gold</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                              <th>Conferences</th>
+                              <td>✅</td>
+                              <td>❌</td>
+                              <td>❌</td>
+                              <td>✅</td>
+                          </tr>
+                          <tr>
+                              <th>Directory Listing</th>
+                              <td>✅</td>
+                              <td>✅</td>
+                              <td>✅</td>
+                              <td>✅</td>
+                          </tr>
+                          <tr>
+                              <th>Event Notification</th>
+                              <td>✅</td>
+                              <td>✅</td>
+                              <td>✅</td>
+                              <td>✅</td>
+                          </tr>
+                          <tr>
+                              <th>Mentoring</th>
+                              <td>❌</td>
+                              <td>❌</td>
+                              <td>✅</td>
+                              <td>✅</td>
+                          </tr>
+                          <tr>
+                              <th>Networking</th>
+                              <td>✅</td>
+                              <td>✅</td>
+                              <td>✅</td>
+                              <td>✅</td>
+                          </tr>
+                          <tr>
+                              <th>Weekly Newsletters</th>
+                              <td>✅</td>
+                              <td>✅</td>
+                              <td>✅</td>
+                              <td>✅</td>
+                          </tr>
+                          <tr>
+                              <th>Online Ad Listing</th>
+                              <td>❌</td>
+                              <td>❌</td>
+                              <td>❌</td>
+                              <td>✅</td>
+                          </tr>
+                          <tr>
+                              <th>Business Workshops</th>
+                              <td>❌</td>
+                              <td>❌</td>
+                              <td>✅</td>
+                              <td>✅</td>
+                          </tr>
+                        </tbody>            
+                        <tfoot>
+                            <tr>
+                                <th>Membership Fee</th>
+                                <td>Free</td> 
+                                <td>5,000$</td>
+                                <td>15,000$</td>
+                                <td>25,000$</td>
+                            </tr>
+                        </tfoot>            
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div id="footer-content">
+                <div id="footer-top-content">
+                    <img src="../chamber/images/logo.png" alt="logo" id="footer-logo">
+                    <h4>Georgetown Chamber of Commerce</h4>
+                    <a class="map" href="https://www.google.com/maps/place/Georgetown,+Guyana" target="_blank">📍 Location</a>
+                    <p>Georgetown, Guyana, SA.</p>
+                    <p>info@gcci.com</p>
+                    <p>+592-801-1096</p>
+                </div>
+                <hr>
+                <div id="footer-bottom-content">
+                    <div id="info">
+                        <p>© Georgetown Chamber of Commerce</p>
+                        <p><strong>Roberto Kippins</strong></p>
+                        <p>WDD 230 Project</p>
+                    </div>
+                    <p id="lastModified"></p>
+                </div>
+            </div>
+        </footer>
+    </main>
+
+    <script src="../scripts/chamber.js"></script>
+</body>
+</html>

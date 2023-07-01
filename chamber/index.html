@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="author" content="Roberto A. Kippins">
+  <meta name="Roberto Kippins" content="This page contains all assignment content of the WDD230 Course">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Site-plan for Georgetown Chamber of Commerce Website">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Eczar&display=swap">
+  <link rel="stylesheet" href="../styles/normalize.css">
+  <link rel="stylesheet" href="../chamber/styles/small.css">
+  <link rel="stylesheet" href="../chamber/styles/medium.css">
+  <link rel="stylesheet" href="../chamber/styles/large.css">
+  <link rel="icon" href="../chamber/images/favicon.png" type="image/png">
+  <title>Georgetown Chamber of Commerce</title>
+</head>
+<body>
+  
+  <header>
+    <div id="header-content">
+      <div id="logo-section">
+        <img src="../chamber/images/logo.png" alt="logo" id="header-logo">
+        <section id="name-section">
+          <h1>Georgetown</h1>
+          <h2>Chamber of Commerce</h2>
+        </section>
+      </div>
+      <nav class="navbar">
+        <ul class="nav-links">
+          <li class="nav-item"><a id="menu" href="#"></a></li>
+          <li class="nav-item"><a href="../chamber/">Home</a></li>
+          <li class="nav-item"><a href="../chamber/discovery.html">Discover</a></li>
+          <li class="nav-item"><a href="../chamber/directory.html">Directory</a></li>
+          <li class="nav-item"><a href="../chamber/join.html">Join</a></li>
+          <li class="nav-item"><a href="../chamber/contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <div id="social-div">
+        <img src="../chamber/images/facebook.png" alt="facebook" class="social">
+        <img src="../chamber/images/linkedin.png" alt="linkedin" class="social">
+      </div>
+      <div id="date-section"><p>Generic date</p></div>
+    </div>
+  </header>
+
+  <main id="home-main">
+    <section id="hero-section" class="home-section">
+      <h2>Welcome</h2>
+      <picture>
+        <source media="(min-width: 35em) and (max-width: 1000px)" srcset="../chamber/images/banner800.jpg">
+        <source media="(min-width: 1000px)" srcset="../chamber/images/banner1200.jpg">
+        <img src="../chamber/images/banner400.jpg" alt="city image">
+      </picture>
+    </section>
+
+    <section id="event-section" class="home-section">
+      <h2>Chamber Business</h2>
+      <p>GCCI CEO recently spoke with the head of a huge oil company in relation to possible jobs that could benefit the locals and the company at the same time.</p>
+    </section>
+
+    <section id="weather-section" class="home-section">
+      <h2>Weather</h2>
+      <div id="temperature-div">
+        <img src="" alt="">
+        <span id="temperature"></span>
+      </div>
+      <div id="weather-status"><h3></h3></div>
+      <hr>
+      <div id="weather-data">
+        <section id="wind-speed">
+          <h4>Wind Speed: </h4><span></span>
+        </section>
+        <section id="wind-chill">
+          <h4>Wind Chill: </h4><span></span>
+        </section>
+      </div>
+    </section>
+
+    <section id="news-section" class="home-section">
+      <h2>News Release</h2>
+      <p>President Irfaan Ali announced that taxes removed from cell phone bills will transform the communications sector.
+        This is according to a joint statement yesterday from three of the country’s telecommunications providers: GTT, Digicel and ENet.
+        They said that the announcement was a “significant step” towards improving information access and bridging the digital divide in the country.
+        <a href="https://www.stabroeknews.com/2023/06/11/news/guyana/tax-removal-on-cell-phones-will-transform-communications-sector/">See more here..</a>
+      </p>
+    </section>
+
+    <div id="spotlight-section" class="home-section">
+      <div id="spotlight-container">
+        <section class="spotlight spotlight1 home-section">
+        </section>
+        <section class="spotlight spotlight2 home-section">
+        </section>
+        <section class="spotlight spotlight3 home-section">
+        </section>
+      </div>
+    </div>
+
+    <div id="join-section" class="home-section">
+      <button><a href="./join.html">Join Us!</a></button>
+      <p>Discover benefits tailored for your organization.</p>
+    </div>
+  </main>
+
+  <footer>
+    <div id="footer-content">
+      <div id="footer-top-content">
+        <img src="images/logo.png" alt="logo" id="footer-logo">
+        <h4>Georgetown Chamber of Commerce</h4>
+        <a class="map" href="https://www.google.com/maps/place/Georgetown,+Guyana" target="_blank">📍 Location</a>
+        <p>Georgetown, Guyana, SA.</p>
+        <p>info@gcci.com</p>
+        <p>+592-801-1096</p>
+      </div>
+      <hr>
+      <div id="footer-bottom-content">
+        <div id="info">
+          <p>© Georgetown Chamber of Commerce</p>
+          <p><strong>Roberto Kippins</strong></p>
+          <p>WDD 230 Project</p>
+        </div>
+        <p id="lastModified"></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../scripts/home.js"></script>
+  <script src="../scripts/chamber.js"></script>
+</body>
+</html>

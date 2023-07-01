@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Delayed Image Loading</title>
+    <meta name="Roberto Kippins" content="This page cointains all assignment content of the WDD230 Course">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/normalize.css">
+    <link rel="stylesheet" href="styles/lazyload.css">
+</head>
+
+<body>
+    <h1>Delayed Image Loading Demo</h1>
+    <picture><img src="https://dummyimage.com/300x400/ddd/000&text=Placeholder" data-src="images/LLI1.jpg" alt="placeholder"></picture>
+    <picture><img src="https://dummyimage.com/300x400/ddd/000&text=Placeholder" data-src="images/LLI2.jpg" alt="placeholder"></picture>
+    <picture><img src="https://dummyimage.com/300x400/ddd/000&text=Placeholder" data-src="images/LLI3.jpg" alt="placeholder"></picture>
+    <picture><img src="https://dummyimage.com/300x400/ddd/000&text=Placeholder" data-src="images/LLI4.jpg" alt="placeholder"></picture>
+    <picture><img src="https://dummyimage.com/300x400/ddd/000&text=Placeholder" data-src="images/LLI5.jpg" alt="placeholder"></picture>
+    <picture><img src="https://dummyimage.com/300x400/ddd/000&text=Placeholder" data-src="images/LLI6.jpg" alt="placeholder"></picture> 
+
+    <footer>
+        <p class= "copyright">
+            &copy;<span id="currentYear"></span> | Roberto A. Kippins | Georgetown, Guyana
+        </p>
+        <p class= "lastupdated">
+            Last Updated: <span id="currentTime"></span>
+        </p>
+    </footer>
+
+    <script src="scripts/lazyload.js"></script>
+    <script src="scripts/main.js"></script>
+
+</body>
+</html>

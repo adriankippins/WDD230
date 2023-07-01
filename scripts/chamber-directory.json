@@ -1,0 +1,100 @@
+{
+    "business": [
+        {
+            "img":"law.png",
+            "name":"A&A Legal Services",
+            "address":"Regent Street 150, Georgetown",
+            "phone":"+5929871234",
+            "url":"www.aalegal.com",
+            "membership":"gold"
+        },
+        {
+            "img":"construction.png",
+            "name":"592 Constructors",
+            "address":"Main Street 190, Georgetown",
+            "phone":"+5927896543",
+            "url":"www.constructors.gy",
+            "membership":"silver"
+        },
+        {
+            "img":"tech.png",
+            "name":"Gobal Tech Innovators",
+            "address":"Water Street 1450, Georgetown",
+            "phone":"+5926290011",
+            "url":"www.gtechinnovators.com",
+            "membership":"gold"
+        },
+        {
+            "img":"isp.png",
+            "name":"Enetworks",
+            "address":"San Lorenzo 322, Georgetown",
+            "phone":"+5923216545",
+            "url":"www.enetworks.gy",
+            "membership":"gold"
+        },
+        {
+            "img":"advertising.png",
+            "name":"Vertex Advertising Solutions",
+            "address":"Camp Street 980, Georgetown",
+            "phone":"+5926586709",
+            "url":"www.vas.gy",
+            "membership":"bronze"
+        },
+        {
+            "img":"transport.png",
+            "name":"Guyana Transport Corp",
+            "address":"Hadfield Street 1024, Georgetown",
+            "phone":"+5929877722",
+            "url":"www.transport.gy",
+            "membership":"silver"
+        },
+        {
+            "img":"health.png",
+            "name":"SVS Health Services",
+            "address":"Vlissengen Road 555, Georgetown",
+            "phone":"+5929780165",
+            "url":"www.svshealth.com",
+            "membership":"np"
+        },
+        {
+            "img":"education.png",
+            "name":"Guyana Education Council",
+            "address":"Lamaha Street 422, Georgetown",
+            "phone":"+5927861281",
+            "url":"www.gec.gy",
+            "membership":"np"
+        },
+        {
+            "img":"retail.png",
+            "name":"Georgetown Mall",
+            "address":"Robb Street 720, Georgetown",
+            "phone":"+5923458761",
+            "url":"www.georgetownmall.com",
+            "membership":"silver"
+        },
+        {
+            "img":"catering.png",
+            "name":"Savor Catering Services",
+            "address":"Croal Street 890, Georgetown",
+            "phone":"+5926123409",
+            "url":"www.savorcatering.gy",
+            "membership":"gold"
+        },
+        {
+            "img":"finance.png",
+            "name":"Capital Investment Bank",
+            "address":"Avenue of the Republic 65, Georgetown",
+            "phone":"+5927891023",
+            "url":"www.capitalbank.gy",
+            "membership":"silver"
+        },
+        {
+            "img":"real-estate.png",
+            "name":"Prime Properties",
+            "address":"Albert Street 320, Georgetown",
+            "phone":"+5929845678",
+            "url":"www.primeproperties.gy",
+            "membership":"gold"
+        }
+    ]
+}

@@ -410,6 +410,11 @@ picture {
 }
 
 /* Directory Page */
+
+.businesses h6 {
+    display: none;
+}
+
 .heading {
     margin: 0 auto;
     font-size: 1.5rem;

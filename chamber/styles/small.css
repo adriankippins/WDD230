@@ -439,13 +439,14 @@ picture {
 .disc-main-container button {
     padding: .5rem; 
     font-weight: bold;
-    background-color: gold;
+    background-color: #000;
+    color: rgba(30, 255, 0, 0.678);
     border-radius: 1rem;
     margin-bottom: 20px;
 }
 
 .disc-main-container button:hover {
-    background-color: darkred;
+    background-color: #000000c4;
 }
 
 .card-view {

@@ -13,7 +13,7 @@ body {
 }
 
 body a {
-    color: rgb(0, 102, 255);
+    color: rgba(30, 255, 0, 0.678);
 }
 
 /* Header, Main, Footer */
@@ -469,7 +469,7 @@ picture {
     width: 30%;
     margin: 0 auto;
     font-weight: bold;
-    animation: flashing 2s infinite;
+    color: rgba(30, 255, 0, 0.678);
 }
 
 .disc-main-container > section.card-view > section {

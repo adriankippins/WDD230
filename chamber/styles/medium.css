@@ -133,10 +133,6 @@
       text-align: right;
     }
   
-    #menu::before {
-      content: "≣";
-    }
-  
     #footer-top-content h4,
     #footer-top-content p {
       text-align: center;

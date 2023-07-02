@@ -286,7 +286,7 @@ hr {
     position: absolute;
     left: 1em;
     top: 0.5em;
-    color: #000;
+    color: white;
     font-size: 1.75em;
     font-weight: bolder;
     text-align: center;
@@ -705,7 +705,30 @@ tr:nth-child(odd) td {
     padding: 10px;
     height: auto;
     border-radius: 1em;
-}  
+} 
+
+/*Define rules for small and medium view*/
+
+@media screen and (max-width: 1199px) {
+    #menu {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: transparent;
+        font-size: 1.5rem;
+        position: relative;
+    }
+      
+    #menu::before {
+        content: "≣";
+        color: black;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }      
+
+}
 
 @media screen and (max-width: 899px) {
     #home-main {
@@ -815,10 +838,6 @@ tr:nth-child(odd) td {
         display: block;
         padding: 0.25em 0.75em;
         text-align: right;
-    }
-
-    #menu::before {
-        content: "≣";
     }
 
     #header-logo {

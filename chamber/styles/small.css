@@ -421,6 +421,7 @@ picture {
 
 .businesses h1 {
     display: none;
+    color: transparent;
 }
 
 .heading {

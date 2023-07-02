@@ -898,7 +898,7 @@ tr:nth-child(odd) td {
     }
 
     .benefits-table-wrapper table {
-        font-size: 0.7rem;
+        font-size: 0.55rem;
     }
       
     .benefits-table-wrapper table th,
@@ -907,7 +907,7 @@ tr:nth-child(odd) td {
     }
       
     .benefits-table-wrapper table .heading {
-        font-size: 0.5rem;
+        font-size: 0.65rem;
     }
       
 

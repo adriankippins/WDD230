@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     }
 
-    let url = "https://adriankippins.github.io/WDD230/scripts/chamber-directory.json";
+    let url = "../scripts/chamber-directory.json";
 
     async function fetchData() {
         let response = await fetch(url);

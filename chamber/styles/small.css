@@ -148,6 +148,10 @@ hr {
     color: gold;
 }
 
+.spotlight h1 {
+    font-size: 1.1rem;
+}
+
 #spotlight-section {
     justify-content: center;
     align-items: center;

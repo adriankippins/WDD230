@@ -38,8 +38,7 @@ function capitalizeFirstLetter(str) {
 }
 
 //Spotlight members:
-
-  const url = "https://adriankippins.github.io/WDD230/scripts/chamber-directory.json";
+const url = "../scripts/chamber-directory.json";
 
 fetch(url)
   .then(response => response.json())
@@ -65,11 +64,11 @@ fetch(url)
 
       const imageElement = document.createElement('img');
       imageElement.src = `images/${image}`;
-      imageElement.alt = name;
+      imageElement.alt = `Logo of ${name}`; // Updated alt text
       imageElement.setAttribute('id', 'member-image');
       memberDiv.appendChild(imageElement);
 
-      const nameHeading = document.createElement('h4');
+      const nameHeading = document.createElement('h1');
       nameHeading.textContent = name;
       memberDiv.appendChild(nameHeading);
 

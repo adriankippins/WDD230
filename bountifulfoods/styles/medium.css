@@ -1,3 +1,5 @@
+/*Rules for medium and large views*/
+
 @media (min-width: 900px) {
 
   #info {
@@ -12,6 +14,8 @@
   
 }  
 
-@media (min-width: 900px) and (max-width: 1199px) {
+/* Define rules for medium view */
 
-  }  
+@media screen and (min-width: 900px) and (max-width: 1199px) {
+
+}

@@ -1,3 +1,22 @@
-@media (min-width: 1200px) {
+/* Define rules for large view */
+@media screen and (min-width: 1200px) {
+    #h-elements-l2 {
+      flex-direction: row;
+    }
+  
+    #navcontainer {
+      justify-content: center;
+    }
+  
+    #navcontainer ul {
+      flex-direction: row;
+    }
+  
+    #navcontainer li {
+      width: auto;
+    }
 
+    nav button {
+        display: none;
+    }
 }

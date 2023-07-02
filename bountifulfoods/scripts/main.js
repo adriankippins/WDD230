@@ -1,3 +1,14 @@
+//Script for the hamburger button in the nav.
+
+function toggleMenu() {
+  document.getElementById("navcontainer").classList.toggle("open");
+}
+
+const menuButton = document.getElementById('menubtn');
+menuButton.addEventListener('click', toggleMenu);
+
+
+//Script to update the date in header and footer.
 document.addEventListener("DOMContentLoaded", () => {
   const dateSection = document.querySelector("#headerdate p");
   const lastModified = document.querySelector("#lastModified");

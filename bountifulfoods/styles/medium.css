@@ -18,8 +18,16 @@
 
 @media screen and (min-width: 900px) and (max-width: 1199px) {
 
-  #icon {
+  #socialcontainer {
+    display: flex;
     justify-content: center;
   }
-
+  
+      /*Home Page Rules*/
+    /*Drinks*/
+    #special-drinks {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+  }
 }

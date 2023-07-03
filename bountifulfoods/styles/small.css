@@ -137,29 +137,37 @@ footer {
   background-color: rgba(43, 22, 92, 0.856);
 }
 
-/*Home page rules
+/*Home page rules*/
 
-/* Main Section */
-main {
-  margin: 0 auto;
-  padding: 20px;
-}
-
-/* Hero Section */
 #hero {
-  text-align: center;
+  position: relative;
+  border: 2px solid #000;
+  box-shadow: 0px 10px 50px 10px rgba(0, 0, 0, 1);
+  overflow: hidden;
 }
 
-#hero img {
+#hero picture {
+  display: block;
   width: 100%;
-  max-width: 800px;
   height: auto;
 }
 
-#hero h1 {
-  font-size: 36px;
-  margin-top: 20px;
+#herotext {
+  padding: 20px;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-radius: 0.5em;
+  box-sizing: border-box;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.7);
 }
+
+#hero h1 {
+  font-size: 50px;
+}
+
 
 /* About Section */
 #about-area {
@@ -313,6 +321,10 @@ main {
 
 /* Define rules for small and medium view */
 @media screen and (max-width: 1199px) {
+
+  main {
+    width: 98%;
+  }
 
   #h-elements-l2 {
     display: flex;

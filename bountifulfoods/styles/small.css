@@ -7,7 +7,7 @@ body {
 }
 
 body a {
-  color:  rgb(255, 174, 0);
+  color: goldenrod;
 }
 
 header,
@@ -81,7 +81,7 @@ footer {
   text-align: center;
   color: white;
   background-color: rgb(43, 22, 92);
-  border: 1px solid rgb(255, 174, 0);
+  border: 1px solid goldenrod;
 }
 
 #navcontainer a:hover {
@@ -93,7 +93,7 @@ footer {
   font-weight: bold;
   color: white;
   background-color: rgb(43, 22, 92);
-  border: 2px solid rgb(255, 174, 0);
+  border: 2px solid goldenrod;
   border-radius: 0.8em;
 }
 
@@ -144,7 +144,7 @@ footer {
   justify-content: center;
   color: white;
   background-color: rgb(43, 22, 92);
-  border: 2px solid rgb(255, 174, 0);
+  border: 2px solid goldenrod;
   border-radius: 0.8em;
 }
 
@@ -323,19 +323,30 @@ footer {
   }
 
 }
+
 @media screen and (max-width: 899px) {
 
   header, footer, main {
     font-size: 0.8rem;
+    text-align: center;
+  }
+
+  #herotext h1 {
+    font-size: 2rem;
   }
 
   #logo {
+    border: 1px solid #000;
     width: 200px;
   }
 
   #f-elements-l2 {
     display: flex;
     flex-direction: column;
+    align-items: center;
+  }
+
+  #f-map {
     align-items: center;
   }
 
@@ -348,12 +359,6 @@ footer {
     width: 98%;
   }
 
-  #h-elements-l2 {
-    display: flex;
-    flex-direction: row;
-    flex-grow: 1;
-  }
-
   #h-elements-l2 div:nth-child(2) {
     order: 3; /* This will move the menu tot he end of the header */
   }
@@ -363,12 +368,9 @@ footer {
   }
 
   #navcontainer {
-    justify-content: center;
-    height: 50px;
-    overflow: hidden;
+    justify-content: flex-end;
   }
   
-
   #navcontainer ul {
     flex-direction: column;
     align-items: flex-end;
@@ -412,6 +414,8 @@ footer {
 
   #navcontainer nav {
       background-color: rgb(43, 22, 92);
+      border-radius: 0.5em;
+      border: 2px solid goldenrod;
       display: grid;
   }
 
@@ -423,7 +427,6 @@ footer {
   }
 
   #navcontainer nav ul li a {
-      display: block;
       padding: .8rem 2vw;
       text-decoration: none;
   }

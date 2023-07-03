@@ -1,7 +1,16 @@
 //Script for the hamburger button in the nav.
 
 function toggleMenu() {
-  document.getElementById("navcontainer").classList.toggle("open");
+  const navContainer = document.getElementById("navcontainer");
+  navContainer.classList.toggle("open");
+  
+  if (navContainer.classList.contains("open")) {
+    // Menu is open, so set height to auto
+    navContainer.style.height = "auto";
+  } else {
+    // Menu is closed, so set height back to initial value
+    navContainer.style.height = "50px";
+  }
 }
 
 const menuButton = document.getElementById('menubtn');

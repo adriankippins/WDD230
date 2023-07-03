@@ -16,6 +16,7 @@ footer {
 
 header,
 footer {
+  height: auto;
   padding: 1em;
   font-weight: bold;
   border-radius: 0.5em;
@@ -53,8 +54,6 @@ footer {
 #navcontainer {
   display: flex;
   align-items: center;
-  height: 50px;
-  width: 100%;
 }
 
 #navcontainer ul {
@@ -139,108 +138,140 @@ footer {
 }
 
 /* Define rules for small view */
+
+@media screen and (max-width: 600px) {
+
+  #socialcontainer {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+  }
+
+  #icon {
+    width: 30px;
+  }
+
+}
 @media screen and (max-width: 899px) {
 
+  header, footer, main {
+    font-size: 0.8rem;
+  }
+
+  #logo {
+    width: 200px;
+  }
 
 }
 
 /* Define rules for small and medium view */
 @media screen and (max-width: 1199px) {
 
-    #h-elements-l2 {
-        flex-direction: column;
-        align-items: flex-start;
-      }
-    
-      #navcontainer {
-        justify-content: flex-end;
-      }
-    
-      #navcontainer ul {
-        flex-direction: column;
-        align-items: flex-end;
-      }
-    
-      #navcontainer li {
-        width: 100%;
-      }
-    
-      #headerdate,
-      #info {
-        text-align: center;
-        margin-top: 1em;
-      }
-    
-      #info p:not(:last-child)::after {
-        content: "";
-      }
-    
-      #logo,
-      #icon {
-        float: none;
-      }
-    
-      #icon {
-        margin-top: 1em;
-      }
-    
-      footer {
-        text-align: center;
-      }
+  #h-elements-l2 {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+  }
 
-    /* CSS for hamburger button in navigation */
-    #navcontainer button {
-        margin: auto 2vw;
-        background: transparent;
-        border: none;
-        font-size: 2rem;
-        color: white;
-    }
-    
-    #navcontainer nav {
-        background-color: rgb(43, 22, 92);
-        display: grid;
-    }
-    
-    #navcontainer nav ul {
-        display: none;
-        list-style-type: none;
-        padding: 0;
-        margin: 0;
-    }
-    
-    #navcontainer nav ul li a {
-        display: block;
-        padding: .8rem 2vw;
-        text-decoration: none;
-    }
-    
-    #navcontainer nav ul li.active a {
-        background-color: rgba(43, 22, 92, 0.856);
-    }
-    
-    #navcontainer nav ul li a:hover {
-        background-color: rgba(43, 22, 92, 0.856);
-    }
-    
-    #navcontainer.open nav ul {
-        display: block;
-    }
-    
-    #menubtn span:nth-child(1) {
-        display: block;
-    }
-    
-    #menubtn span:nth-child(2) {
-        display: none;
-    }
-    
-    #navcontainer.open #menubtn span:nth-child(1) {
-        display: none;
-    }
-      
-    #navcontainer.open #menubtn span:nth-child(2) {
-        display: block;
-    }
+  #h-elements-l2 div:nth-child(2) {
+    order: 3; /* This will move the menu tot he end of the header */
+  }
+  
+  #h-elements-l2 div:nth-child(3) {
+    order: 2; /* This will move the social icons to the middle of the header.*/
+  }
 
+  #navcontainer {
+    justify-content: center;
+    height: 50px;
+    overflow: hidden;
+  }
+  
+
+  #navcontainer ul {
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  #navcontainer li {
+    width: 100%;
+  }
+
+  #headerdate,
+  #info {
+    text-align: center;
+    margin-top: 1em;
+  }
+
+  #info p:not(:last-child)::after {
+    content: "";
+  }
+
+  #icon {
+      margin-top: 1em;
+      justify-content: center;
+  }
+
+  footer {
+      text-align: center;
+  }
+
+  #f-elements-l2 #logo {
+    float: left;
+  }
+
+  /* CSS for hamburger button in navigation */
+  #navcontainer button {
+      margin: auto 2vw;
+      background: transparent;
+      border: none;
+      font-size: 2rem;
+      color: white;
+  }
+
+  #navcontainer nav {
+      background-color: rgb(43, 22, 92);
+      display: grid;
+  }
+
+  #navcontainer nav ul {
+      display: none;
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+  }
+
+  #navcontainer nav ul li a {
+      display: block;
+      padding: .8rem 2vw;
+      text-decoration: none;
+  }
+
+  #navcontainer nav ul li.active a {
+      background-color: rgba(43, 22, 92, 0.856);
+  }
+
+  #navcontainer nav ul li a:hover {
+      background-color: rgba(43, 22, 92, 0.856);
+  }
+
+  #navcontainer.open nav ul {
+      display: block;
+  }
+
+  #menubtn span:nth-child(1) {
+      display: block;
+  }
+
+  #menubtn span:nth-child(2) {
+      display: none;
+  }
+
+  #navcontainer.open #menubtn span:nth-child(1) {
+      display: none;
+  }
+
+  #navcontainer.open #menubtn span:nth-child(2) {
+      display: block;
+  }
 }

@@ -1,5 +1,6 @@
 /* Define rules for large view */
 @media screen and (min-width: 1200px) {
+  
     #h-elements-l2 {
       flex-direction: row;
     }
@@ -21,11 +22,32 @@
     }
 
     /*Home Page Rules*/
+    /*Main level 2 Rules*/
+
+    #h-main-l2 {
+      display: grid;
+      grid-template-columns: 1fr 3fr 1fr;
+      gap: 20px;
+    }
+    
     /*Drinks*/
     #special-drinks {
       display: grid;
-      grid-template-columns: repeat(5, 1fr);
+      grid-template-columns: repeat(3, 1fr);
       gap: 20px;
+  }
+
+  #cta {
+    padding: 10px;
+    align-items: center;
+  }
+
+  #cta h1 {
+    text-align: center;
+  }
+
+  #cta p {
+    text-align: left;
   }
   
 }

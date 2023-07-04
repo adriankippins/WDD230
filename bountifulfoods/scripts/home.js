@@ -62,18 +62,16 @@ function createTableRow(label, value) {
 }
 
 
-// Weather Data
-
 fetch('https://api.openweathermap.org/data/2.5/forecast?q=Carlsbad,us&units=metric&appid=e1ffd8f4f1e0f0124da9f6c2bfa13c74')
   .then(response => response.json())
   .then(data => {
     const forecastList = data.list;
 
     // Get the container element for the forecast details
-    const forecastContainer = document.getElementById('forecast-details');
+    const weatherArea = document.getElementById('weather-area');
 
     // Iterate over the forecast list and populate the forecast details
-    for (let i = 0; i < forecastList.length; i += 8) {
+    for (let i = 0; i < 5; i++) {
       const forecast = forecastList[i];
 
       // Get the date and time of the forecast
@@ -102,8 +100,8 @@ fetch('https://api.openweathermap.org/data/2.5/forecast?q=Carlsbad,us&units=metr
         <img src="${iconUrl}" alt="Weather Icon">
       `;
 
-      // Append the forecast card to the forecast container
-      forecastContainer.appendChild(forecastCard);
+      // Append the forecast card to the weather area container
+      weatherArea.appendChild(forecastCard);
     }
   })
   .catch(error => {

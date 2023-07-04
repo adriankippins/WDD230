@@ -331,8 +331,6 @@ footer {
   #h-elements-l2 {
     display: grid;
     grid-template-columns: auto 2fr;
-    grid-template-rows: auto auto;
-    align-items: center;
   }
   
   #h-elements-l2 div:nth-child(1) {

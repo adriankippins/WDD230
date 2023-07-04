@@ -89,3 +89,51 @@ document.addEventListener('DOMContentLoaded', (event) => {
     })
     .catch(error => console.error('Error:', error));
 });
+
+
+document.addEventListener('DOMContentLoaded', (event) => {
+  const ctaDrinkImages = document.querySelector('#cta-drink-images');
+
+  fetch('https://brotherblazzard.github.io/canvas-content/fruit.json')
+    .then(response => response.json())
+    .then(data => {
+      const topDrinks = data.slice(0, 3); // Get the top 3 drinks from the JSON data
+
+      topDrinks.forEach(drink => {
+        const drinkElement = document.createElement('div');
+        drinkElement.classList.add('drink');
+
+        const nameElement = document.createElement('h1');
+        nameElement.textContent = drink.name;
+        drinkElement.appendChild(nameElement);
+
+        const imageElement = document.createElement('img');
+        imageElement.src = getDrinkImage(drink.name); // Get the image URL based on the drink name
+        imageElement.alt = drink.name;
+        drinkElement.appendChild(imageElement);
+
+        const detailsElement = document.createElement('p');
+        detailsElement.innerHTML = `Calories: ${drink.nutritions.calories}<br>Cost: $15 per glass`;
+        drinkElement.appendChild(detailsElement);
+
+        ctaDrinkImages.appendChild(drinkElement);
+      });
+    })
+    .catch(error => console.error('Error:', error));
+});
+
+function getDrinkImage(drinkName) {
+  // Logic to determine the image URL based on the drink name
+  // You can customize this function based on your specific requirements
+  if (drinkName === 'Apple') {
+    return '../bountifulfoods/images/apple.png';
+  } else if (drinkName === 'Apricot') {
+    return '../bountifulfoods/images/apricot.png';
+  } else if (drinkName === 'Avocado') {
+    return '../bountifulfoods/images/avacado.png';
+  }
+  // Add more conditions for other drink names and their respective image URLs
+
+  // If no specific image is found, you can return a default image URL
+  return 'path/to/default.jpg';
+}

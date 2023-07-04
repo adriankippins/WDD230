@@ -256,6 +256,11 @@ footer {
   border-radius: 4px;
 }
 
+#calltoaction,
+#submitted-drinks-count p {
+  text-align: center;
+}
+
 /* Forecast Card */
 .forecast-card {
 

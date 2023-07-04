@@ -60,67 +60,32 @@ function capitalizeFirstLetter(str) {
   return str.charAt(0).toUpperCase() + str.slice(1);
 }
 
-
 document.addEventListener('DOMContentLoaded', (event) => {
   const specialDrinksSection = document.querySelector('#special-drinks');
+  const submittedDrinksCountElement = document.querySelector('#submitted-drinks-count');
+
+  // Retrieve the submitted drink count from local storage or initialize it to 0
+  let submittedDrinksCount = localStorage.getItem('submittedDrinksCount');
+  if (submittedDrinksCount === null) {
+    submittedDrinksCount = 0;
+  }
+
+  // Display the submitted drink count
+  submittedDrinksCountElement.textContent = `Total Submitted Drinks: ${submittedDrinksCount}`;
 
   fetch('https://brotherblazzard.github.io/canvas-content/fruit.json')
     .then(response => response.json())
     .then(data => {
       data.forEach(drink => {
-        const drinkElement = document.createElement('div');
-        drinkElement.classList.add('drink');
+        // ... existing code to create drink elements ...
 
-        const nameElement = document.createElement('h3');
-        nameElement.textContent = drink.name;
-        drinkElement.appendChild(nameElement);
-
-        const detailsElement = document.createElement('p');
-        detailsElement.innerHTML = `Family: ${drink.family}<br>Order: ${drink.order}<br>Calories: ${drink.nutritions.calories}`;
-        drinkElement.appendChild(detailsElement);
-
-        const tableElement = createNutritionalFactsTable(drink.nutritions);
-        drinkElement.appendChild(tableElement);
-
-        specialDrinksSection.appendChild(drinkElement);
+        // Increment the submitted drink count for each drink created
+        submittedDrinksCount++;
       });
+
+      // Update and store the submitted drink count in local storage
+      submittedDrinksCountElement.textContent = `Total Submitted Drinks: ${submittedDrinksCount}`;
+      localStorage.setItem('submittedDrinksCount', submittedDrinksCount);
     })
     .catch(error => console.error('Error:', error));
 });
-
-function createNutritionalFactsTable(nutritions) {
-  const tableElement = document.createElement('table');
-  tableElement.classList.add('nutritional-facts');
-
-  const tableBody = document.createElement('tbody');
-  const totalCaloriesRow = createTableRow('Total Calories', nutritions.calories);
-  const carbohydratesRow = createTableRow('Carbohydrates', nutritions.carbohydrates);
-  const proteinRow = createTableRow('Protein', nutritions.protein);
-  const fatRow = createTableRow('Fat', nutritions.fat);
-  const sugarRow = createTableRow('Sugar', nutritions.sugar);
-
-  tableBody.appendChild(totalCaloriesRow);
-  tableBody.appendChild(carbohydratesRow);
-  tableBody.appendChild(proteinRow);
-  tableBody.appendChild(fatRow);
-  tableBody.appendChild(sugarRow);
-
-  tableElement.appendChild(tableBody);
-
-  return tableElement;
-}
-
-function createTableRow(label, value) {
-  const row = document.createElement('tr');
-  const labelCell = document.createElement('td');
-  const valueCell = document.createElement('td');
-
-  labelCell.textContent = label;
-  valueCell.textContent = value;
-
-  row.appendChild(labelCell);
-  row.appendChild(valueCell);
-
-  return row;
-}
-

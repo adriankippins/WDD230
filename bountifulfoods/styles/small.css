@@ -390,7 +390,7 @@ footer {
     font-size: 2rem;
   }
 
-  #logo {
+  .logo {
     border: 1px solid #000;
     width: 200px;
   }
@@ -416,6 +416,11 @@ footer {
   #weather-area {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
+  }
+
+  #cta-drink-images {
+    border: 2px solid gold;
+    border-radius: 01em;
   }
 
 
@@ -542,11 +547,9 @@ footer {
   }
 
   #cta-drink-images {
-    border: 2px solid gold;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     margin-top: 20px;
-    
   }
   
   #about-area img {

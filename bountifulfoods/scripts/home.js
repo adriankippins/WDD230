@@ -60,6 +60,7 @@ function capitalizeFirstLetter(str) {
   return str.charAt(0).toUpperCase() + str.slice(1);
 }
 
+//Js for Waether
 document.addEventListener('DOMContentLoaded', (event) => {
   const specialDrinksSection = document.querySelector('#special-drinks');
   const submittedDrinksCountElement = document.querySelector('#submitted-drinks-count');
@@ -90,7 +91,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
     .catch(error => console.error('Error:', error));
 });
 
-
+//JS for Weasther Cards Home Page
 document.addEventListener('DOMContentLoaded', (event) => {
   const ctaDrinkImages = document.querySelector('#cta-drink-images');
 

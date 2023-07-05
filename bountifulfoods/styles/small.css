@@ -107,11 +107,11 @@ footer {
 
 /*Rules for Logo and Social Icons*/
 
-#logo {
+.logo {
   width: 250px;
 }
 
-#icon {
+.icon {
   padding: 5px;
   width: 40px;
   float: right;
@@ -418,9 +418,6 @@ footer {
     grid-template-columns: repeat(1, 1fr);
   }
 
-  #weather-area .forecast-card:not(:first-child) {
-    display: none;
-  }
 
 }
 
@@ -462,7 +459,7 @@ footer {
     content: "";
   }
 
-  #icon {
+  .icon {
       margin-top: 1em;
       justify-content: center;
   }
@@ -534,6 +531,10 @@ footer {
   #h-main-l2 {
     display: flex;
     flex-direction: column;
+  }
+
+  #weather-area .forecast-card:not(:first-child) {
+    display: none;
   }
 
   #cta {

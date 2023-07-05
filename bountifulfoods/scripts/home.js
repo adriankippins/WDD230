@@ -60,7 +60,10 @@ function capitalizeFirstLetter(str) {
   return str.charAt(0).toUpperCase() + str.slice(1);
 }
 
-//Js for Waether
+
+
+
+//Js for Submitted drink count
 document.addEventListener('DOMContentLoaded', (event) => {
   const specialDrinksSection = document.querySelector('#special-drinks');
   const submittedDrinksCountElement = document.querySelector('#submitted-drinks-count');
@@ -91,7 +94,10 @@ document.addEventListener('DOMContentLoaded', (event) => {
     .catch(error => console.error('Error:', error));
 });
 
-//JS for Weasther Cards Home Page
+
+
+//JS for CTA Top 3 drinks
+
 document.addEventListener('DOMContentLoaded', (event) => {
   const ctaDrinkImages = document.querySelector('#cta-drink-images');
 
@@ -113,9 +119,17 @@ document.addEventListener('DOMContentLoaded', (event) => {
         imageElement.alt = drink.name;
         drinkElement.appendChild(imageElement);
 
-        const detailsElement = document.createElement('p');
-        detailsElement.innerHTML = `Calories: ${drink.nutritions.calories}<br>Cost: $15 per glass`;
+        const detailsElement = document.createElement('h1'); // Use <h1> for the details
+        detailsElement.textContent = 'Details:';
         drinkElement.appendChild(detailsElement);
+
+        const caloriesElement = document.createElement('h1'); // Use <h1> for "Calories"
+        caloriesElement.textContent = 'Calories: ' + drink.nutritions.calories;
+        detailsElement.appendChild(caloriesElement);
+
+        const costElement = document.createElement('h1'); // Use <h1> for "Cost per Glass"
+        costElement.textContent = 'Cost: $15 per glass';
+        detailsElement.appendChild(costElement);
 
         ctaDrinkImages.appendChild(drinkElement);
       });

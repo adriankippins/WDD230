@@ -17,6 +17,10 @@ footer {
   margin-top: 1em;
 }
 
+main {
+  width: 98%;
+}
+
 header,
 footer {
   height: auto;
@@ -153,11 +157,6 @@ footer {
 }
 
 /*Home page rules*/
-
-#h-main > :not(#hero) {
-  width: 98%;
-  margin: 0 auto;
-}
 
 
 #hero {
@@ -308,41 +307,6 @@ footer {
   margin-top: 10px;
 }
 
-/* Special Drinks */
-
-#special-drinks {
-  margin-top: 40px;
-  margin-bottom: 20px;
-}
-
-#special-drinks h2 {
-  font-size: 24px;
-  margin-bottom: 10px;
-}
-
-#special-drinks .drink {
-  padding: 20px;
-  text-align: center;
-  background-color: #f5f5f5;
-  border-radius: 0.5em;
-  border: 1px solid #000;
-  box-shadow: 0px 10px 50px 10px rgba(0, 0, 0, 0.5);
-}
-
-#special-drinks .drink h3 {
-  font-size: 20px;
-  margin-bottom: 10px;
-}
-
-#special-drinks .drink p {
-  font-size: 16px;
-  margin-top: 10px;
-}
-
-.drink table {
-  margin: 0 auto;
-}
-
 /*Fresh page*/
 
 #fr-main {
@@ -386,8 +350,9 @@ input, select, textarea {
 }
 
 option.fruit-option {
-  color: #000;
-  background-color: rgba(255, 255, 255, 0.1);
+  color: white;
+  font-weight: bold;
+  background-color: rgba(43, 22, 92, 0.834);
 }
 
 input::placeholder, textarea::placeholder {
@@ -415,13 +380,75 @@ input[type="button"]:hover {
   border-radius: 5px;
 }
 
+/*Menu Page*/
+
+#m-main h1 {
+  text-align: center;
+}
+
+/* Special Drinks */
+
+#special-drinks {
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+#special-drinks h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+#special-drinks .drink {
+  padding: 20px;
+  text-align: center;
+  color: white;
+  background-color: rgb(43, 22, 92);
+  border-radius: 0.5em;
+  border: 2px solid #000;
+  box-shadow: 0px 10px 50px 10px rgba(0, 0, 0, 0.5);
+}
+
+#special-drinks .drink h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  text-decoration: underline;
+}
+
+#special-drinks .drink p {
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+
+
 /*About Us Page*/
+
+#m-about-area {
+  padding: 10px;
+  color: white;
+  font-weight: bold;
+  background-color: rgb(43, 22, 92);
+  border: 2px solid #000;
+  border-radius: 1em;
+  box-shadow: 0px 10px 50px 10px rgba(0, 0, 0, 0.5);
+}
+
+#ceo-profile {
+  border: 2px solid #000;
+  border-radius: 1em;
+  padding: 10px;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  background-color: rgb(43, 22, 92);
+  box-shadow: 0px 10px 50px 10px rgba(0, 0, 0, 1);
+}
 
 .profile-card img {
   max-width: 300px;
   padding: 10px;
   height: auto;
-  border-radius: 1em;
+  border-radius: 10em;
 } 
 
 
@@ -508,15 +535,23 @@ input[type="button"]:hover {
     border-radius: 01em;
   }
 
+    /*About Page*/
+
+    #ab-main{
+      width: 95%
+    }
+  
+    #ceo-profile {
+      margin: 0 auto;
+      margin-top: 20px;
+      width: 60%;
+    }
 
 }
 
 /* Define rules for small and medium view */
 @media screen and (max-width: 1199px) {
 
-  main {
-    width: 98%;
-  }
 
   #h-elements-l2 div:nth-child(2) {
     order: 3; /* This will move the menu tot he end of the header */

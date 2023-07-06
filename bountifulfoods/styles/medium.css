@@ -11,6 +11,14 @@
     content: "|";
     margin: 0 0.5em;
   }
+
+    /*About US Page*/
+
+    #ab-main {
+      display: grid;
+      grid-template-columns:  2fr 1fr;
+      gap: 10px;
+    }
   
 }  
 

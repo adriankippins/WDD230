@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
         const drinkElement = document.createElement('div');
         drinkElement.classList.add('drink');
 
-        const nameElement = document.createElement('h3');
+        const nameElement = document.createElement('h1');
         nameElement.textContent = drink.name;
         drinkElement.appendChild(nameElement);
 

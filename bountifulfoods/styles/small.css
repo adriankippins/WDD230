@@ -415,6 +415,15 @@ input[type="button"]:hover {
   border-radius: 5px;
 }
 
+/*About Us Page*/
+
+.profile-card img {
+  max-width: 300px;
+  padding: 10px;
+  height: auto;
+  border-radius: 1em;
+} 
+
 
 
 /* Define rules for small view */

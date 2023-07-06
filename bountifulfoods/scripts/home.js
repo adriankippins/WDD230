@@ -6,6 +6,8 @@ fetch('https://api.openweathermap.org/data/2.5/forecast?q=Carlsbad,us&units=metr
     const weatherArea = document.getElementById('weather-area');
     const uniqueDates = [];
 
+    let imageCounter = 0; // Add this line to initialize the image counter
+
     forecastList.forEach(forecast => {
       const forecastDate = new Date(forecast.dt * 1000);
       const forecastDateString = forecastDate.toDateString();
@@ -25,11 +27,13 @@ fetch('https://api.openweathermap.org/data/2.5/forecast?q=Carlsbad,us&units=metr
         const forecastCard = document.createElement('div');
         forecastCard.classList.add('forecast-card');
 
+        imageCounter++; // Increment the counter each time you add a new image
+
         forecastCard.innerHTML = `
           <div class="forecast-date">${dayName}, ${monthName} ${dayOfMonth}</div>
           <div class="forecast-temperature">${temperature}°C</div>
           <div class="forecast-conditions">${conditions}</div>
-          <img src="${iconUrl}" alt="Icon representing ${conditions}">
+          <img src="${iconUrl}" alt="Weather image ${imageCounter} representing ${conditions}">
         `;
 
         weatherArea.appendChild(forecastCard);
@@ -48,11 +52,10 @@ function capitalizeFirstLetter(str) {
 
 document.addEventListener('DOMContentLoaded', (event) => {
   const specialDrinksSection = document.querySelector('#special-drinks');
-  const submittedDrinksContainer = document.querySelector('#submitted-drinks-count');
-
-  // Create a new h2 element
-  let submittedDrinksCountElement = document.createElement('h2');
-
+  
+  // Now we are directly selecting the h1 element 
+  const submittedDrinksCountElement = document.querySelector('#submitted-drinks-count');
+  
   // Retrieve the submitted drink count from local storage or initialize it to 0
   let submittedDrinksCount = localStorage.getItem('submittedDrinksCount');
   if (submittedDrinksCount === null) {
@@ -61,9 +64,6 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
   // Display the submitted drink count
   submittedDrinksCountElement.textContent = `Total Submitted Drinks: ${submittedDrinksCount}`;
-
-  // Append the h2 element to the submittedDrinksContainer
-  submittedDrinksContainer.appendChild(submittedDrinksCountElement);
 
   fetch('https://brotherblazzard.github.io/canvas-content/fruit.json')
     .then(response => response.json())
@@ -81,6 +81,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
     })
     .catch(error => console.error('Error:', error));
 });
+
 
 
 

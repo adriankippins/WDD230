@@ -309,11 +309,6 @@ footer {
 
 /*Fresh page*/
 
-#fr-main {
-  max-width: 600px;
-  margin: 0 auto;
-  padding: 20px;
-}
 
 #fr-container-l1 {
   background-color: rgb(43, 22, 92);
@@ -433,6 +428,11 @@ input[type="button"]:hover {
   box-shadow: 0px 10px 50px 10px rgba(0, 0, 0, 0.5);
 }
 
+#bfstore img {
+  width: 100%;
+  border-radius: 1em;
+}
+
 #ceo-profile {
   border: 2px solid #000;
   border-radius: 1em;
@@ -489,6 +489,14 @@ input[type="button"]:hover {
     display: flex;
     justify-content: center;
   }
+
+  /*Fresh Page*/
+
+  #fr-container-l1 {
+    width: 60%;
+    margin: 0 auto;
+  }
+
 }
 
 @media screen and (max-width: 899px) {
@@ -535,6 +543,16 @@ input[type="button"]:hover {
     border-radius: 01em;
   }
 
+  /*Fresh Page*/
+
+  #fr-container-l1 {
+    text-align:left;
+  }
+
+  #fr-main img {
+    display: none;
+  }
+
     /*About Page*/
 
     #ab-main{
@@ -542,9 +560,7 @@ input[type="button"]:hover {
     }
   
     #ceo-profile {
-      margin: 0 auto;
-      margin-top: 20px;
-      width: 60%;
+      display: none;
     }
 
 }
@@ -675,5 +691,9 @@ input[type="button"]:hover {
   #about-area img {
     width: 100%;
   }
+
+  /*Fresh Page*/
+
+  
 
 }

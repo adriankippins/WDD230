@@ -343,6 +343,79 @@ footer {
   margin: 0 auto;
 }
 
+/*Fresh page*/
+
+#fr-main {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+#fr-container-l1 {
+  background-color: rgb(43, 22, 92);
+  color: rgb(93, 184, 190);
+  font-weight: bold;
+  padding: 20px;
+  border-radius: 1em;
+  border: 2px solid #000;
+  box-shadow: 0px 10px 50px 10px rgba(0, 0, 0, 1);
+}
+
+#fr-container-l1 h1 {
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+from option {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+input, select, textarea {
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: white;
+  font-weight: bold;
+  border: 1px solid #000;
+}
+
+option.fruit-option {
+  color: #000;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+input::placeholder, textarea::placeholder {
+  color: rgba(93, 184, 190, 0.5);
+}
+
+input[type="button"] {
+  cursor: pointer;
+  background-color: rgb(93, 184, 190);
+  color: #000;
+  font-weight: bold;
+}
+
+input[type="button"]:hover {
+  background-color: rgba(93, 184, 190, 0.7);
+  border: 2px solid #000;
+}
+
+#output {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: white;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+
 
 /* Define rules for small view */
 

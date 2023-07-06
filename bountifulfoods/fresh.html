@@ -41,7 +41,29 @@
         </div>
     </header>
   
-    <main>
+    <main id="fr-main">
+        <div id="fr-container-l1">
+            <h1>Build Your Specialty Drink</h1>
+
+            <form id="drinkForm">
+            First name: <br>
+            <input type="text" id="firstName" name="firstName" required><br>
+            Email: <br>
+            <input type="email" id="email" name="email" required><br>
+            Phone number: <br>
+            <input type="tel" id="phone" name="phone" required><br>
+            Select Fruits: <br>
+            <div class="select-wrapper"><select id="fruit1" name="fruit1" required></select></div>
+            <div class="select-wrapper"><select id="fruit2" name="fruit2" required></select></div>
+            <div class="select-wrapper"><select id="fruit3" name="fruit3" required></select></div>
+              
+            Special Instructions: <br>
+            <textarea id="specialInstructions" name="specialInstructions"></textarea><br>
+            <input type="button" value="Submit" onclick="submitForm()">
+            </form>
+
+            <div id="output"></div>
+        </div>
         
     </main>
     
@@ -65,5 +87,6 @@
         </div>
     </footer>
     <script src="../bountifulfoods/scripts/main.js"></script>
+    <script src="../bountifulfoods/scripts/fresh.js"></script>
 </body>
 </html>

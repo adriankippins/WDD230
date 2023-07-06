@@ -12,12 +12,37 @@
     margin: 0 0.5em;
   }
 
+  /*Fresh Page*/
+
+  #fr-main {
+    margin:  0 auto;
+    display: flex;
+    gap: 30px;
+  }
+
+  #fr-main img {
+    width: 70%;
+  }
+
+  #fr-container-l1,
+  #buildimage {
+    flex: 1;
+    margin-top: 20px;
+  }
+
     /*About US Page*/
 
     #ab-main {
-      display: grid;
-      grid-template-columns:  2fr 1fr;
+      display: flex;
       gap: 10px;
+    }
+
+    #ceo-profile {
+      flex: 1;
+      height: 700px;
+    }
+    #m-about-area {
+      flex: 2;
     }
   
 }  

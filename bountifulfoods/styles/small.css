@@ -390,7 +390,7 @@ input[type="button"]:hover {
   margin-bottom: 10px;
 }
 
-.drink {
+#special-drinks .drink {
   padding: 20px;
   text-align: center;
   color: white;
@@ -400,18 +400,18 @@ input[type="button"]:hover {
   box-shadow: 0px 10px 50px 10px rgba(0, 0, 0, 0.5);
 }
 
-.drink h1 {
+#special-drinks .drink h1 {
   font-size: 20px;
   margin-bottom: 10px;
   text-decoration: underline;
 }
 
-.drink p {
+#special-drinks .drink p {
   font-size: 16px;
   margin-top: 10px;
 }
 
-.drink:hover {
+#special-drinks .drink:hover {
   transform: scale(1.04);
   transition: transform 0.5s ease;
 }

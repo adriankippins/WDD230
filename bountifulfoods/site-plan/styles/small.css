@@ -69,10 +69,14 @@ nav a.active {
 
 /* Main content styles */
 main {
+    margin: 20px auto;
     padding: 20px;
     background-color: #d8edf6;
     color: rgb(43, 22, 92);
     font-weight: bold;
+    border-radius: 1em;
+    border: 1px solid #000;
+    box-shadow: 0px 10px 50px 10px rgba(0, 0, 0, 1);
 }
 
 main h1 {
@@ -117,6 +121,41 @@ main p {
     font-weight: bold;
     background-color: white;
 }
+
+/*Site <Map*/
+
+#sm-home,
+#sm-fresh,
+#sm-menu,
+#sm-about {
+    width: 100px;
+    border: 1px solid #000;
+    border-radius: 0.5em;
+    background-color: rgb(43, 22, 92);
+}
+
+#sm-home a,
+#sm-fresh a,
+#sm-menu a,
+#sm-about a {
+    color: white;
+    font-weight: bold;
+}
+
+#site-map {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#site-map-l2 {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+    justify-content: center;
+}
+
 
 footer p {
     margin-bottom: 5px;

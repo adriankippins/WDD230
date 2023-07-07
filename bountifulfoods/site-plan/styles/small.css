@@ -8,7 +8,8 @@
 
 /* Body styles */
 body {
-    padding: 20px;
+    max-width: 1200px;
+    margin: 20px auto;
     font-family: 'Alegreya Sans', monospace, sans-serif;
     font-size: 14px;
     line-height: 1.6;
@@ -170,4 +171,20 @@ main p {
 
 footer p {
     margin-bottom: 5px;
+}
+
+@media screen and (max-width: 1000px) {
+    #logo {
+        width: 200px;
+    }
+
+    #favicon {
+        width: 70px;
+    }
+
+    #wireframes img {
+        width: 90%;
+
+      } 
+
 }

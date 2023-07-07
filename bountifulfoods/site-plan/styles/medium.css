@@ -1,0 +1,84 @@
+
+main h1 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+main h2 {
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+main h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+main p {
+    margin-bottom: 15px;
+}
+
+.colors {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.profile-card {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+  
+.profile {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+}
+  
+.profile .card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+  
+.profile .name {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+  
+.profile .photo {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    object-fit: cover;
+}
+  
+.profile .demographics {
+    list-style-type: none;
+    padding: 0;
+    text-align: left;
+    margin-bottom: 10px;
+}
+  
+.profile .demographics li {
+    margin-bottom: 5px;
+}
+  
+.profile .motivation {
+    text-align: justify;
+}
+
+.taol {
+    margin-bottom: 20px;
+}
+
+.taol li {
+    text-align: left;
+}

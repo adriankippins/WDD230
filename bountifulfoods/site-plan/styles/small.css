@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Body styles */
+body {
+    padding: 20px;
+    font-family: 'Alegreya Sans', monospace, sans-serif;
+    font-size: 14px;
+    line-height: 1.6;
+    text-align: center;
+    color: #000000;
+}
+
+/* Header styles */
+header {
+    text-align: center;
+    background-color: white;
+}
+
+header,
+footer {
+    padding: 20px;
+    color: #000;
+    border-radius: 1em;
+    border: 1px solid #000;
+    box-shadow: 0px 10px 50px 10px rgba(0, 0, 0, 1);
+}
+
+footer {
+    background-color: rgb(43, 22, 92);
+    color: white;
+    font-weight: bold;
+}
+
+header h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+header h2 {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+/* Navigation styles */
+nav {
+    background-color: rgb(43, 22, 92);
+    font-weight: bold;
+    padding: 10px;
+    text-align: center;
+    border: 2px solid #000;
+    border-radius: 1em;
+}
+
+nav a {
+    color: #FFFFFF;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+nav a.active {
+    font-weight: bold;
+}
+
+/* Main content styles */
+main {
+    padding: 20px;
+    background-color: #d8edf6;
+    color: rgb(43, 22, 92);
+    font-weight: bold;
+}
+
+main h1 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+main h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+main h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+main p {
+    margin-bottom: 10px;
+}
+
+.colors {
+    margin-left: auto;
+    margin-right: auto;
+}
+  
+
+.primary {
+    color: #FFFFFF;
+    font-weight: bold;
+    background-color: rgb(43, 22, 92);
+}
+
+.secondary {
+    background-color: #d8edf6;
+    color: #000;
+    font-weight: bold;
+}
+
+.accent {
+    color: #000000;
+    font-weight: bold;
+    background-color: white;
+}
+
+footer p {
+    margin-bottom: 5px;
+}

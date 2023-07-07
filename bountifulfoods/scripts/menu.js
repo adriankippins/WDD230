@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
         drinkElement.appendChild(nameElement);
 
         const detailsElement = document.createElement('p');
-        detailsElement.textContent = `Calories: ${drink.nutritions.calories}`;
+        detailsElement.textContent = `Total Calories: ${drink.nutritions.calories}`;
         drinkElement.appendChild(detailsElement);
 
         const nutritionalFactsElement = createNutritionalFacts(drink.nutritions);
@@ -29,13 +29,11 @@ function createNutritionalFacts(nutritions) {
   const nutritionalFactsElement = document.createElement('div');
   nutritionalFactsElement.classList.add('nutritional-facts');
 
-  const totalCaloriesRow = createNutritionalFactRow('Total Calories', nutritions.calories);
-  const carbohydratesRow = createNutritionalFactRow('Carbohydrates', nutritions.carbohydrates);
-  const proteinRow = createNutritionalFactRow('Protein', nutritions.protein);
-  const fatRow = createNutritionalFactRow('Fat', nutritions.fat);
-  const sugarRow = createNutritionalFactRow('Sugar', nutritions.sugar);
+  const carbohydratesRow = createNutritionalFactRow('Carbohydrates:', nutritions.carbohydrates);
+  const proteinRow = createNutritionalFactRow('Protein:', nutritions.protein);
+  const fatRow = createNutritionalFactRow('Fat:', nutritions.fat);
+  const sugarRow = createNutritionalFactRow('Sugar:', nutritions.sugar);
 
-  nutritionalFactsElement.appendChild(totalCaloriesRow);
   nutritionalFactsElement.appendChild(carbohydratesRow);
   nutritionalFactsElement.appendChild(proteinRow);
   nutritionalFactsElement.appendChild(fatRow);
@@ -54,7 +52,7 @@ function createNutritionalFactRow(label, value) {
 
   const valueElement = document.createElement('span');
   valueElement.classList.add('nutritional-fact-value');
-  valueElement.textContent = value;
+  valueElement.textContent = ` ${value}`;
 
   row.appendChild(labelElement);
   row.appendChild(valueElement);

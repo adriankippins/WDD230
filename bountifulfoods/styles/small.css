@@ -307,8 +307,9 @@ footer {
   margin-top: 10px;
 }
 
-/*Fresh page*/
 
+
+/*Fresh page*/
 
 #fr-container-l1 {
   background-color: rgb(43, 22, 92);
@@ -330,10 +331,6 @@ form {
   gap: 15px;
 }
 
-from option {
-  background-color: rgba(255, 255, 255, 0.1);
-}
-
 input, select, textarea {
   padding: 10px;
   border-radius: 5px;
@@ -347,7 +344,7 @@ input, select, textarea {
 option.fruit-option {
   color: white;
   font-weight: bold;
-  background-color: rgba(43, 22, 92, 0.834);
+  background-color: rgba(43, 22, 92, 0.918);
 }
 
 input::placeholder, textarea::placeholder {
@@ -375,13 +372,13 @@ input[type="button"]:hover {
   border-radius: 5px;
 }
 
+
+
 /*Menu Page*/
 
 #m-main h1 {
   text-align: center;
 }
-
-/* Special Drinks */
 
 #special-drinks {
   margin-top: 40px;
@@ -393,7 +390,7 @@ input[type="button"]:hover {
   margin-bottom: 10px;
 }
 
-#special-drinks .drink {
+.drink {
   padding: 20px;
   text-align: center;
   color: white;
@@ -403,16 +400,22 @@ input[type="button"]:hover {
   box-shadow: 0px 10px 50px 10px rgba(0, 0, 0, 0.5);
 }
 
-#special-drinks .drink h1 {
+.drink h1 {
   font-size: 20px;
   margin-bottom: 10px;
   text-decoration: underline;
 }
 
-#special-drinks .drink p {
+.drink p {
   font-size: 16px;
   margin-top: 10px;
 }
+
+.drink:hover {
+  transform: scale(1.04);
+  transition: transform 0.5s ease;
+}
+
 
 
 
@@ -693,7 +696,5 @@ input[type="button"]:hover {
   }
 
   /*Fresh Page*/
-
-  
 
 }

@@ -15,13 +15,12 @@
   /*Fresh Page*/
 
   #fr-main {
-    margin:  0 auto;
     display: flex;
-    gap: 30px;
   }
-
-  #fr-main img {
-    width: 70%;
+  
+  #buildimage img {
+    width: 90%;
+    float: right;
   }
 
   #fr-container-l1,

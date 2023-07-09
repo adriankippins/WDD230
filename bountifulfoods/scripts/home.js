@@ -48,14 +48,9 @@ function capitalizeFirstLetter(str) {
   return str.charAt(0).toUpperCase() + str.slice(1);
 }
 
-
-
 document.addEventListener('DOMContentLoaded', (event) => {
-  const specialDrinksSection = document.querySelector('#special-drinks');
-  
-  // Now we are directly selecting the h1 element 
-  const submittedDrinksCountElement = document.querySelector('#submitted-drinks-count');
-  
+  const submittedDrinksCountElement = document.getElementById('submitted-drinks-count');
+
   // Retrieve the submitted drink count from local storage or initialize it to 0
   let submittedDrinksCount = localStorage.getItem('submittedDrinksCount');
   if (submittedDrinksCount === null) {
@@ -64,25 +59,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
   // Display the submitted drink count
   submittedDrinksCountElement.textContent = `Total Submitted Drinks: ${submittedDrinksCount}`;
-
-  fetch('https://brotherblazzard.github.io/canvas-content/fruit.json')
-    .then(response => response.json())
-    .then(data => {
-      data.forEach(drink => {
-        // ... existing code to create drink elements ...
-
-        // Increment the submitted drink count for each drink created
-        submittedDrinksCount++;
-      });
-
-      // Update and store the submitted drink count in local storage
-      submittedDrinksCountElement.textContent = `Total Submitted Drinks: ${submittedDrinksCount}`;
-      localStorage.setItem('submittedDrinksCount', submittedDrinksCount);
-    })
-    .catch(error => console.error('Error:', error));
 });
-
-
 
 
 
@@ -137,8 +114,6 @@ function getDrinkImage(drinkName) {
   } else if (drinkName === 'Avocado') {
     return '../bountifulfoods/images/avacado.png';
   }
-  // Add more conditions for other drink names and their respective image URLs
 
-  // If no specific image is found, you can return a default image URL
   return 'path/to/default.jpg';
 }

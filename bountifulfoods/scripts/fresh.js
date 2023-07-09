@@ -1,25 +1,27 @@
-fetch('https://brotherblazzard.github.io/canvas-content/fruit.json')
-  .then(response => response.json())
-  .then(data => {
-    const selectElements = [document.getElementById('fruit1'), document.getElementById('fruit2'), document.getElementById('fruit3')];
+document.addEventListener('DOMContentLoaded', (event) => {
+  fetch('https://brotherblazzard.github.io/canvas-content/fruit.json')
+    .then(response => response.json())
+    .then(data => {
+      const selectElements = [document.getElementById('fruit1'), document.getElementById('fruit2'), document.getElementById('fruit3')];
 
-    selectElements.forEach(selectElement => {
-      // Add the default option to each dropdown
-      const defaultOption = document.createElement('option');
-      defaultOption.value = "";
-      defaultOption.text = "Please Select";
-      selectElement.appendChild(defaultOption);
+      selectElements.forEach(selectElement => {
+        // Add the default option to each dropdown
+        const defaultOption = document.createElement('option');
+        defaultOption.value = "";
+        defaultOption.text = "Please Select";
+        selectElement.appendChild(defaultOption);
 
-      // Add the fruit options
-      data.forEach(fruit => {
-        const option = document.createElement('option');
-        option.value = fruit.name;
-        option.text = fruit.name;
-        option.classList.add('fruit-option');
-        selectElement.appendChild(option);
+        // Add the fruit options
+        data.forEach(fruit => {
+          const option = document.createElement('option');
+          option.value = fruit.name;
+          option.text = fruit.name;
+          option.classList.add('fruit-option');
+          selectElement.appendChild(option);
+        });
       });
     });
-  });
+});
 
 function submitForm() {
   const firstName = document.getElementById('firstName').value;
@@ -74,4 +76,16 @@ function submitForm() {
         <p>Sugar: ${nutritions.sugar.toFixed(2)}</p>
       `;
     });
+
+  // Increment the submitted drink count
+  let submittedDrinksCount = localStorage.getItem('submittedDrinksCount');
+  if (submittedDrinksCount === null) {
+    submittedDrinksCount = 0;
+  }
+  submittedDrinksCount++;
+  localStorage.setItem('submittedDrinksCount', submittedDrinksCount);
+
+  // Update the displayed submitted drink count
+  const submitCountElement = document.getElementById('submitted-drinks-count');
+  submitCountElement.textContent = `Total Submitted Drinks: ${submittedDrinksCount}`;
 }

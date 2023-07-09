@@ -32,10 +32,16 @@ function submitForm() {
   const fruit3 = document.getElementById('fruit3').value;
   const specialInstructions = document.getElementById('specialInstructions').value;
 
+  // Check if any of the fields are empty
+  if (firstName === "" || email === "" || phone === "") {
+    alert("Please fill in all the required fields");
+    return; // Stop the function here
+  }
+
   // Check if any of the dropdowns have the "Please Select" option selected
   if (fruit1 === "" || fruit2 === "" || fruit3 === "") {
     alert("Please select a fruit in each dropdown");
-    return;  // Stop the function here
+    return; // Stop the function here
   }
 
   // Check that the selected fruits are unique
@@ -44,14 +50,17 @@ function submitForm() {
 
   if (uniqueFruits.length !== selectedFruits.length) {
     alert("Please select different fruits in each dropdown");
-    return;  // Stop the function here
+    return; // Stop the function here
   }
+
+  // Generate an order number
+  const orderNumber = generateOrderNumber();
 
   // Calculate nutritional values
   fetch('https://brotherblazzard.github.io/canvas-content/fruit.json')
     .then(response => response.json())
     .then(data => {
-      const nutritions = {carbohydrates: 0, protein: 0, fat: 0, calories: 0, sugar: 0};
+      const nutritions = { carbohydrates: 0, protein: 0, fat: 0, calories: 0, sugar: 0 };
 
       selectedFruits.forEach(selectedFruit => {
         const fruit = data.find(fruit => fruit.name === selectedFruit);
@@ -62,6 +71,7 @@ function submitForm() {
 
       const outputDiv = document.getElementById('output');
       outputDiv.innerHTML = `
+        <p>Order Number: ${orderNumber}</p>
         <p>Name: ${firstName}</p>
         <p>Email: ${email}</p>
         <p>Phone: ${phone}</p>
@@ -88,4 +98,12 @@ function submitForm() {
   // Update the displayed submitted drink count
   const submitCountElement = document.getElementById('submitted-drinks-count');
   submitCountElement.textContent = `Total Submitted Drinks: ${submittedDrinksCount}`;
+}
+
+function generateOrderNumber() {
+  // Generate a random order number using a combination of current date/time and a random number
+  const currentDate = new Date();
+  const timestamp = currentDate.getTime(); // Get current timestamp
+  const random = Math.floor(Math.random() * 10000); // Generate random number between 0 and 9999
+  return `${timestamp}-${random}`;
 }
